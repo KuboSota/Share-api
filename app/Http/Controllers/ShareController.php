@@ -15,10 +15,10 @@ class ShareController extends Controller
      */
     public function index()
     {
-        $item = Share::all();
+        $items = Share::all();
         return response()->json([
             'message' => 'OK',
-            'data' => $item
+            'data' => $items
         ], 200);
     }
 
